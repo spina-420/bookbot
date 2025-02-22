@@ -1,3 +1,4 @@
+from stats import word_count
 book = "books/frankenstein.txt"
 
 def main():
@@ -9,9 +10,6 @@ def main():
         letter_count(file_contents)
         print("--- End report ---")
         
-def word_count(file_contents):
-    words = file_contents.split()
-    return len(words)
 
 def letter_count(file_contents):
     counts = {}
